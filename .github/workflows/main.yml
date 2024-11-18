@@ -12,5 +12,5 @@ jobs:
       - name: Deploy Stage
         uses: fjogeleit/http-request-action@v1
         with:
-          url: 'http://discente-1.npca.tec.br/deploy/update/'
+          url: 'http://discente-1.npca.tec.br/'
           method: 'GET'
