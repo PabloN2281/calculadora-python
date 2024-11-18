@@ -24,4 +24,5 @@ def calculator_view(request):
                 resultado = "Erro: Divisão por zero"
 
     return render(request, 'index.html', {'resultado': resultado, 'operacao': operacao})
-print("ativi 1")
+def update(request):
+    return httpResponse("UPDATE")
