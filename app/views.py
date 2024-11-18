@@ -1,5 +1,6 @@
 from django.shortcuts import render
-
+from django.http import HttpResponse
+import os
 # Create your views here.
 
 def calculator_view(request):
@@ -22,7 +23,8 @@ def calculator_view(request):
                 resultado = num1 / num2
             else:
                 resultado = "Erro: Divisão por zero"
-
+    os.system("git pull origin main")	
     return render(request, 'index.html', {'resultado': resultado, 'operacao': operacao})
 def update(request):
+    os.system("git pull origin main")
     return httpResponse("UPDATE")
